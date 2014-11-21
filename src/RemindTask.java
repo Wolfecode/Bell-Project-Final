@@ -23,8 +23,10 @@ public class RemindTask extends TimerTask {
 
 			System.out.println("fired off an event!");
 			Reminded = true;
+			// Create a new Thread to play the sound, so you can still interact with the remaining program
 			PlaySound s = new PlaySound();
-			s.playSound("BackinBlack.wav");
+			Thread t = new Thread(s);
+			t.start();
 
 			try {
 				timer.cancel(); // Terminate the timer thread

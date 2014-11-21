@@ -27,7 +27,7 @@ public class BellProjectMain {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.add(new BellInterface());
 		frame.pack();
-		frame.setSize(400, 120);
+		frame.setSize(400, 300);
 		frame.setVisible(true);
 
 		try {
